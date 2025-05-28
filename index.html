@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luka Obradović - CTO</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Raleway', sans-serif;
+            background-color: #1f2937; /* Darker Gray background */
+            color: #f3f4f6; /* Lighter Gray text */
+        }
+        .accent-color {
+            color: #14b8a6; /* Vibrant Teal (Teal-500) */
+        }
+        .accent-color-hover:hover {
+            color: #2dd4bf; /* Lighter Teal (Teal-400) for hover */
+        }
+        .accent-bg {
+            background-color: #14b8a6;
+        }
+        .section-title {
+            font-size: 1.6rem; /* Slightly larger */
+            font-weight: 700; /* Bold */
+            margin-bottom: 1.25rem;
+            padding-bottom: 0.6rem;
+            border-bottom: 3px solid #14b8a6; /* Teal border */
+            display: inline-block;
+            letter-spacing: 0.025em; /* Subtle letter spacing */
+        }
+        .job-title {
+            font-size: 1.15rem;
+            font-weight: 600;
+            color: #d1d5db; /* Light gray for job titles */
+        }
+        .company-name {
+            font-size: 1.05rem;
+            font-weight: 500;
+            color: #f9fafb; /* Off-white for company names */
+        }
+        .date-location {
+            font-size: 0.9rem;
+            color: #9ca3af; /* Medium gray for dates/location */
+        }
+        .card {
+            background-color: #374151; /* Medium Dark Gray for cards */
+            border-radius: 0.75rem; /* Slightly more rounded */
+            padding: 1.75rem;
+            margin-bottom: 1.75rem;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.2), 0 4px 6px -2px rgba(0, 0, 0, 0.1); /* Softer, more modern shadow */
+        }
+        .skill-tag {
+            background-color: #4b5563; /* Dark Gray for skill tags */
+            color: #f3f4f6;
+            padding: 0.35rem 0.85rem;
+            border-radius: 9999px;
+            font-size: 0.875rem; /* 14px */
+            font-weight: 500;
+            margin-right: 0.6rem;
+            margin-bottom: 0.6rem;
+            display: inline-block;
+            transition: all 0.2s ease-in-out;
+        }
+        .skill-tag:hover {
+            background-color: #14b8a6; /* Teal on hover */
+            color: #ffffff;
+            transform: translateY(-2px);
+        }
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #374151; /* Card background color */
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #14b8a6; /* Teal */
+            border-radius: 5px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #0d9488; /* Darker Teal */
+        }
+
+        @media (min-width: 1024px) { /* lg breakpoint */
+            .lg-sticky-sidebar {
+                position: sticky;
+                top: 2.5rem;
+                height: calc(100vh - 5rem);
+                overflow-y: auto;
+                padding-right: 0.5rem; /* For scrollbar visibility */
+            }
+        }
+        .profile-img {
+            border: 5px solid #0d9488; /* Darker Teal border for photo */
+            box-shadow: 0 0 25px rgba(20, 184, 166, 0.3); /* Subtle glow effect */
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <div class="container mx-auto p-4 lg:p-10 max-w-screen-xl">
+        <div class="lg:flex lg:space-x-10">
+
+            <aside class="lg:w-2/5 xl:w-1/3 mb-10 lg:mb-0">
+                <div class="lg-sticky-sidebar p-6 card">
+                    <div class="flex justify-center mb-8">
+                        <img src="https://placehold.co/250x250/14b8a6/FFFFFF?text=LO&font=raleway"
+                             alt="Luka Obradović"
+                             class="rounded-full w-48 h-48 lg:w-56 lg:h-56 object-cover profile-img"
+                             onerror="this.onerror=null; this.src='https://placehold.co/250x250/cccccc/FFFFFF?text=Photo&font=raleway';">
+                             </div>
+
+                    <div class="mb-10 text-center lg:text-left">
+                        <h1 class="text-4xl lg:text-5xl font-bold text-white tracking-tight">Luka Obradović</h1>
+                        <p class="text-2xl accent-color font-semibold mt-1">Chief Technology Officer</p>
+                        <div class="mt-6 space-y-3 text-gray-300">
+                            <p><a href="tel:+381637585451" class="accent-color-hover flex items-center justify-center lg:justify-start">
+                                <svg class="w-5 h-5 mr-2 inline" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.308 1.154a11.042 11.042 0 005.516 5.516l1.154-2.308a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
+                                +381 63 7585451
+                            </a></p>
+                            <p><a href="mailto:obradovic.luka.83@gmail.com" class="accent-color-hover flex items-center justify-center lg:justify-start">
+                                <svg class="w-5 h-5 mr-2 inline" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                                obradovic.luka.83@gmail.com
+                            </a></p>
+                            <!-- <p><a href="#" class="accent-color-hover flex items-center justify-center lg:justify-start">
+                                <svg class="w-5 h-5 mr-2 inline" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"> ... LinkedIn path ... </svg>
+                                LinkedIn Profile
+                            </a></p> -->
+                        </div>
+                    </div>
+
+                    <section class="mb-10">
+                        <h2 class="section-title">Skills</h2>
+                        <div class="mb-6">
+                            <h3 class="font-semibold text-xl text-gray-100 mb-3">AI / Machine Learning</h3>
+                            <div class="flex flex-wrap">
+                                <span class="skill-tag">AI Strategy, Governance & Ethics</span>
+                                <span class="skill-tag">LLM Solution Architecture</span>
+                                <span class="skill-tag">RAG Architecture</span>
+                                <span class="skill-tag">Autonomous AI Agents</span>
+                                <span class="skill-tag">Advanced Prompt Engineering</span>
+                                <span class="skill-tag">LangChain</span>
+                                <span class="skill-tag">LlamaIndex</span>
+                                <span class="skill-tag">LangGraph</span>
+                                <span class="skill-tag">Typesense</span>
+                                <span class="skill-tag">ChromaDB</span>
+                                <span class="skill-tag">OpenAI API</span>
+                                <span class="skill-tag">Anthropic API</span>
+                                <span class="skill-tag">Cohere API</span>
+                            </div>
+                        </div>
+                        <div class="mb-6">
+                            <h3 class="font-semibold text-xl text-gray-100 mb-3">Big Data Ecosystem</h3>
+                             <div class="flex flex-wrap">
+                                <span class="skill-tag">Hadoop Ecosystem (HDFS, MapReduce, HBase, Hive)</span>
+                                <span class="skill-tag">Apache Beam</span>
+                                <span class="skill-tag">Apache Storm</span>
+                                <span class="skill-tag">Apache Spark</span>
+                                <span class="skill-tag">Kafka</span>
+                                <span class="skill-tag">Cassandra</span>
+                                <span class="skill-tag">Redis</span>
+                            </div>
+                        </div>
+                        <div class="mb-6">
+                            <h3 class="font-semibold text-xl text-gray-100 mb-3">Programming & Scripting</h3>
+                            <div class="flex flex-wrap">
+                                <span class="skill-tag">Java</span>
+                                <span class="skill-tag">Scala</span>
+                                <span class="skill-tag">Python</span>
+                                <span class="skill-tag">UNIX Shell (Bash, Awk, Sed)</span>
+                            </div>
+                        </div>
+                         <div class="mb-6">
+                            <h3 class="font-semibold text-xl text-gray-100 mb-3">Cloud & Web Technologies</h3>
+                             <div class="flex flex-wrap">
+                                <span class="skill-tag">Google Cloud Platform (GCP)</span>
+                                <span class="skill-tag">gRPC</span>
+                                <span class="skill-tag">Protobuf</span>
+                                <span class="skill-tag">Dataflow</span>
+                                <span class="skill-tag">Kubernetes (GKE)</span>
+                                <span class="skill-tag">HTML5</span>
+                                <span class="skill-tag">CSS3</span>
+                                <span class="skill-tag">AngularJS</span>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="mb-10">
+                        <h2 class="section-title">Education</h2>
+                        <div class="card mb-4">
+                            <h3 class="company-name">University of Belgrade, VSER</h3>
+                            <p class="job-title !text-gray-400">Dept. of Advanced Computer Technologies</p>
+                            <p class="date-location">2002 - 2005</p>
+                        </div>
+                        <div class="card">
+                            <h3 class="company-name">Electrotechnical High School "Nikola Tesla"</h3>
+                            <p class="job-title !text-gray-400">Dept. of Computer Engineering</p>
+                            <p class="date-location">1998 - 2002</p>
+                        </div>
+                    </section>
+
+                    <section>
+                        <h2 class="section-title">Certifications</h2>
+                        <div class="card mb-4">
+                            <p class="company-name">Nvidia - AI Fundamentals of Deep Learning</p>
+                        </div>
+                        <div class="card">
+                            <p class="company-name">Cloudera Developer Training for Apache Hadoop</p>
+                        </div>
+                    </section>
+                </div>
+            </aside>
+
+            <main class="lg:w-3/5 xl:w-2/3">
+                <section class="mb-10 card">
+                    <h2 class="section-title">Summary</h2>
+                    <p class="text-gray-200 leading-relaxed text-lg">
+                        Visionary Chief Technology Officer (CTO) with a robust Big Data foundation, now spearheading transformative Artificial Intelligence initiatives. Proven expertise in cultivating high-performance technical teams, driving innovation from ideation to impactful deployment, and architecting scalable, resilient data and AI systems that solve complex business challenges. Deeply committed to democratizing AI and making its capabilities accessible and understandable throughout organizations.
+                    </p>
+                </section>
+
+                <section class="mb-10">
+                    <h2 class="section-title">Experience</h2>
+                    <div class="card">
+                        <h3 class="company-name">Hooloovoo <span class="text-gray-400 font-normal text-sm align-middle">| Belgrade, Serbia</span></h3>
+                        <p class="job-title mt-1">Chief Technology Officer (CTO)</p>
+                        <p class="date-location mb-3">Mid 2023 - Present</p>
+                        <ul class="list-disc list-outside ml-5 space-y-2 text-gray-300 leading-relaxed">
+                            <li>Define and execute the company-wide technology vision and strategic roadmap, with a primary focus on AI innovation and seamless integration across all business units.</li>
+                            <li>Lead and significantly expand pivotal AI initiatives (active since 2022), overseeing the end-to-end lifecycle of sophisticated AI solutions for a diverse global clientele.</li>
+                            <li>Deliver expert AI Architecture services and strategic C-level consultancy to key clients, guiding them in leveraging AI for substantial business transformation and competitive advantage.</li>
+                            <li>Directed the conception, development, and successful enterprise-wide adoption of <strong>HAIP (Hooloovoo AI Playground)</strong> – a secure, highly customizable AI gateway that has become a cornerstone of the company's AI strategy, fostering a robust AI-forward culture and increasing AI tool utilization to over 80% of personnel.</li>
+                            <li>Championed AI democratization and literacy through engaging internal programs like "AI Week" and "AI Tuesdays," effectively educating and empowering staff across all departments.</li>
+                            <li>Oversee and contribute directly to the architectural design of critical AI projects, including a Regulatory Compliance AI Assistant, an Elderly Home Care AI Analyst, and advanced Text-2-SQL AI-driven workflows.</li>
+                        </ul>
+                    </div>
+                    <div class="card">
+                         <p class="job-title">Head of Technology</p>
+                        <p class="date-location mb-3">November 2021 - Mid 2023</p>
+                        <ul class="list-disc list-outside ml-5 space-y-2 text-gray-300 leading-relaxed">
+                            <li>Led, mentored, and scaled multiple technology departments, providing oversight for technical architecture, strategic planning, and product roadmap execution.</li>
+                            <li>Played a key role in bridging existing Big Data capabilities with emerging AI technologies, strategically positioning the company for a successful transition towards AI-driven solutions.</li>
+                            <li>Managed and coordinated cross-functional agile teams in the delivery of complex software projects, ensuring alignment with overarching business objectives and maintaining high standards of technical excellence.</li>
+                        </ul>
+                    </div>
+                    <div class="card">
+                        <p class="job-title">Senior Big Data Engineer</p>
+                        <p class="date-location mb-3">September 2018 - November 2021</p>
+                         <ul class="list-disc list-outside ml-5 space-y-2 text-gray-300 leading-relaxed">
+                            <li>Served as a lead Big Data consultant for major clients, including Kindred Group, providing expert guidance on data architecture and processing.</li>
+                            <li>Functioned as Agile/Tech Lead for a dynamic team of over 12 engineers, fostering collaboration and driving project success.</li>
+                            <li>Developed and optimized large-scale batch and real-time data processing applications, including personalized recommendation engines (Kafka Streams/Spark) and live alerting systems (Kafka Streams/Storm).</li>
+                        </ul>
+                    </div>
+                    <div class="card">
+                        <h3 class="company-name">Practice Insight <span class="text-gray-400 font-normal text-sm align-middle">| Perth, Australia (Part-time Consultant)</span></h3>
+                        <p class="job-title mt-1">Senior Big Data Engineer</p>
+                        <p class="date-location mb-3">September 2016 - September 2018</p>
+                        <ul class="list-disc list-outside ml-5 space-y-2 text-gray-300 leading-relaxed">
+                            <li>Architected and developed scalable data processing applications using Google Dataflow and Apache Beam.</li>
+                            <li>Engineered and implemented high-performance, resilient gRPC microservices.</li>
+                        </ul>
+                    </div>
+                    <div class="card">
+                        <h3 class="company-name">Vast.com <span class="text-gray-400 font-normal text-sm align-middle">| Belgrade, Serbia</span></h3>
+                        <p class="job-title mt-1">Software Engineer, Data Engineering Team</p>
+                        <p class="date-location mb-3">March 2011 - June 2018</p>
+                        <ul class="list-disc list-outside ml-5 space-y-2 text-gray-300 leading-relaxed">
+                            <li>Developed and maintained various MapReduce data analysis and processing applications.</li>
+                            <li><strong>Key projects:</strong>
+                                <ul class="list-disc list-outside ml-6 mt-1 space-y-1">
+                                    <li><strong>sonik:</strong> Designed and built a Lisp-like expression evaluator using Dijkstra's shunting-yard algorithm. This evolved into a versatile internal language crucial for data filtering, complex MR job processing, and embedding dynamic business logic across multiple systems.</li>
+                                    <li><strong>Spell Check:</strong> Implemented a robust spell-checking tool for US city names, utilizing Peter Norvig's brute-force algorithm alongside a BK Tree with Damerau-Levenshtein distance. This tool became essential for the data quality team's location data verification processes.</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                     <div class="card">
+                        <p class="job-title">Team Lead, Data Quality Team</p>
+                        <p class="date-location mb-3">September 2009 - March 2011</p>
+                         <ul class="list-disc list-outside ml-5 space-y-2 text-gray-300 leading-relaxed">
+                            <li>Led, mentored, and managed a team of over 10 data quality analysts and engineers.</li>
+                            <li>Successfully drove and delivered multiple cross-departmental projects focused on enhancing data integrity, accuracy, and overall quality.</li>
+                        </ul>
+                    </div>
+                    <div class="card">
+                        <p class="job-title">Software Developer, Meta-Data Extraction Team</p>
+                        <p class="date-location mb-3">September 2007 - September 2009</p>
+                        <ul class="list-disc list-outside ml-5 space-y-2 text-gray-300 leading-relaxed">
+                            <li>Contributed to significant refactoring and optimization of existing codebases, improving performance and maintainability.</li>
+                            <li>Engaged in full-stack Java and Unix-based programming for sophisticated meta-data extraction systems.</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section class="mb-10">
+                    <h2 class="section-title">Personal AI Projects & Initiatives</h2>
+                    <div class="card">
+                        <h3 class="company-name">KrangsOrg <span class="font-normal text-gray-400 text-sm align-middle">(Founder/Creator)</span></h3>
+                        <p class="text-gray-300 leading-relaxed mt-1">An innovative internet radio station that broadcasts AI-generated commercials 24/7, demonstrating practical and creative applications of generative AI technology.</p>
+                    </div>
+                    <div class="card">
+                        <h3 class="company-name">swim-stories.com <span class="font-normal text-gray-400 text-sm align-middle">(Founder/Owner)</span></h3>
+                        <p class="text-gray-300 leading-relaxed mt-1">A unique online platform that delivers AI-generated motivational and inspirational stories specifically tailored for swimmers and endurance athletes, fostering engagement and community.</p>
+                    </div>
+                </section>
+
+                <section class="mb-10">
+                    <h2 class="section-title">Other Projects</h2>
+                     <div class="card">
+                        <h3 class="company-name">Distributed Web Crawler <span class="font-normal text-gray-400 text-sm align-middle">| Brasidas Group, Altendorf, Switzerland</span></h3>
+                        <p class="date-location mb-2">June 2017 - October 2017</p>
+                        <p class="text-gray-300 leading-relaxed">Key Technologies: Java, Python, Scrapy, Google Cloud Platform, Tor, Solr, gRPC.</p>
+                    </div>
+                    <div class="card">
+                        <h3 class="company-name">Links DB Project <span class="font-normal text-gray-400 text-sm align-middle">| Brasidas Group, Altendorf, Switzerland</span></h3>
+                        <p class="date-location mb-2">October 2017 - March 2018</p>
+                        <p class="text-gray-300 leading-relaxed">Key Technologies: Java, Neo4j, AngularJS, gRPC, Solr.</p>
+                    </div>
+                </section>
+
+                 <section class="mb-10">
+                    <h2 class="section-title">Teaching Experience</h2>
+                    <div class="card">
+                        <h3 class="company-name">Teaching Assistant (Java/C/C++) <span class="font-normal text-gray-400 text-sm align-middle">| VSER, Belgrade, Serbia</span></h3>
+                        <p class="date-location mb-3">October 2004 - July 2007</p>
+                        <ul class="list-disc list-outside ml-5 space-y-2 text-gray-300 leading-relaxed">
+                            <li>Prepared and delivered engaging exercise sessions for undergraduate computer science students.</li>
+                            <li>Developed and maintained a dynamic web-based quiz application to support coursework and assessment.</li>
+                        </ul>
+                    </div>
+                </section>
+
+            </main>
+        </div>
+    </div>
+
+</body>
+</html>
